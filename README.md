@@ -32,8 +32,8 @@ https://user-images.githubusercontent.com/53417886/190247179-48409365-c81f-4aec-
 https://user-images.githubusercontent.com/53417886/190246749-72d2e9ad-627e-4726-ab00-29cbcfb2750e.mp4
 ### Backend
 #### Métodos de clasificación
-Random Forest [aquí](https://colab.research.google.com/drive/1uIGeOJNlxcUanE1ypyh10tnQVzkieydv?usp=sharing)
-Logistic regression [aquí](https://colab.research.google.com/drive/112pAUZ1pxaypek3BoE02_w78pqfrNBmN?usp=sharing)
+Random Forest [aquí.](https://colab.research.google.com/drive/1uIGeOJNlxcUanE1ypyh10tnQVzkieydv?usp=sharing)
+Logistic regression [aquí.](https://colab.research.google.com/drive/112pAUZ1pxaypek3BoE02_w78pqfrNBmN?usp=sharing)
 #### Métricas
 Se pueden visualizar en las pantallas de cada algoritmo en la parte superior.
 #### Algoritmo seleccionado
