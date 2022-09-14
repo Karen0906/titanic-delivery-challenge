@@ -30,4 +30,4 @@ def predict():
   return str(prediction)
 
 if __name__ == "__main__":
-  app.run('10.48.229.5')
+  app.run('192.168.1.65')

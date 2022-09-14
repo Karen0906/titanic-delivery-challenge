@@ -26,7 +26,7 @@ export default function PredictionScreen() {
                 require('../assets/random.jpg')
               }
               className='mt-2 rounded-full'
-              style={{ width: 50, height: 50}}
+              style={{ width: 60, height: 60}}
             />
             <View>
               <Text className='text-xs text-[#666768] text-justify'>Algoritmo: Random Forest</Text>
@@ -37,7 +37,7 @@ export default function PredictionScreen() {
             <Formik 
             initialValues={{passengerid:'', pclass:'', name:'', sex:'', age:'', sibsp:'', parch:'', ticket:'', fare:'', cabin:'', embarked:''}}
             onSubmit={values=>
-            axios.post('http://10.48.229.5:5000/predict',{
+            axios.post('http://192.168.1.65:5000/predict',{
               passengerid: values.passengerid,
               pclass: values.pclass,
               name: values.name,
@@ -69,7 +69,7 @@ export default function PredictionScreen() {
                 onChangeText={handleChange('pclass')}
                 onBlur={handleBlur('pclass')}
                 value={values.pclass}
-                placeholder="Opciones: 1, 2, 3"
+                placeholder="Opciones: 1=primera clase, 2=segunda clase, 3=tercera clase"
                 className='text-xs h-12 bg-white border border-[#666768]'
                 />
               </View>
@@ -89,7 +89,7 @@ export default function PredictionScreen() {
                 onChangeText={handleChange('sex')}
                 onBlur={handleBlur('sex')}
                 value={values.sex}
-                placeholder="Opciones: 0-hombre, 1-mujer"
+                placeholder="Opciones: 0=hombre, 1=mujer"
                 className='text-xs h-12 bg-white border border-[#666768]'
                 />
               </View>
@@ -159,16 +159,16 @@ export default function PredictionScreen() {
                 onChangeText={handleChange('embarked')}
                 onBlur={handleBlur('embarked')}
                 value={values.embarked}
-                placeholder="Opciones: 0 = Cherbourg, 1 = Queenstown, 2 = Southampton"
+                placeholder="Opciones: 0=Cherbourg, 1=Queenstown, 2=Southampton"
                 className='text-xs h-12 bg-white border border-[#666768]'
                 />
               </View>
               <View className='flex items-center p-2 space-y-3'>
-                <Button onPress={handleSubmit} title=' Predecir ' color='#345b54'/>
+                <Button onPress={handleSubmit} title=' Predecir ' color='#5c0cbc'/>
                 <View className='flex space-y-1 items-center'>
                   <Text className='text-lg font-bold'>Predicción</Text>
-                  <Text className='text-xs text-justify text-[#666768]'>La predicción devuelve un 0 y 1 que corresponde a morir o sobrevivir respectivamente.</Text>
-                  <Text className='text-xs text-justify text-[#345b54] font-extrabold'>{prediction}</Text>
+                  <Text className='text-xs text-justify text-[#3D3D3E]'>La predicción devuelve las opciones: 0 = sobrevivir y  1 = no sobrevivir. El resultado para la persona que ingresaste es el siguiente.</Text>
+                  <Text className='text-lg text-justify text-[#5c0cbc] font-black'>{prediction}</Text>
                 </View>
               </View>
             </View>

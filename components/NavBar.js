@@ -32,43 +32,43 @@ export default function NavBar({isHome, isAlg1, isAlg2, isSelect, isPrediction})
         </TouchableOpacity>
       )
     }
-    <View className='bg-[#131314] h-24 z-10'>
-      <View className={`bg-[#131314] w-64 h-[10000px] px-6 z-10 ${isOpen ? 'translate-x-0' : 'translate-x-96'} ease-in-out duration-700`}>
+    <View className='bg-[#5c0cbc] h-24 z-10'>
+      <View className={`bg-[#5c0cbc] w-64 h-[10000px] px-6 z-10 ${isOpen ? 'translate-x-0' : 'translate-x-96'} ease-in-out duration-700`}>
         <View className='pt-24 flex space-y-4'>
           <TouchableOpacity 
           onPress={()=>{
             navigation.navigate('Home')
           }}
           >
-            <Text className={`text-xl font-bold ${isHome ? 'text-white underline underline-offset-8': 'text-[#666768]'}`}>Inicio</Text>
+            <Text className={`text-xl font-bold ${isHome ? 'text-white underline': 'text-[#E0E0E1]'}`}>Inicio</Text>
           </TouchableOpacity>
           <TouchableOpacity 
           onPress={()=>{
             navigation.navigate('AlgorithmOne')
           }}
           >
-            <Text className={`text-xl font-bold ${isAlg1 ? 'text-white underline': 'text-[#666768]'}`}>Algoritmo uno</Text>
+            <Text className={`text-xl font-bold ${isAlg1 ? 'text-white underline': 'text-[#E0E0E1]'}`}>Algoritmo uno</Text>
           </TouchableOpacity>
           <TouchableOpacity 
           onPress={()=>{
             navigation.navigate('AlgorithmTwo')
           }}
           >
-            <Text className={`text-xl font-bold ${isAlg2 ? 'text-white underline': 'text-[#666768]'}`}>Algoritmo dos</Text>
+            <Text className={`text-xl font-bold ${isAlg2 ? 'text-white underline': 'text-[#E0E0E1]'}`}>Algoritmo dos</Text>
           </TouchableOpacity>
           <TouchableOpacity 
           onPress={()=>{
             navigation.navigate('Select')
           }}
           >
-            <Text className={`text-xl font-bold ${isSelect ? 'text-white underline': 'text-[#666768]'}`}>Selección</Text>
+            <Text className={`text-xl font-bold ${isSelect ? 'text-white underline': 'text-[#E0E0E1]'}`}>Selección</Text>
           </TouchableOpacity>
           <TouchableOpacity 
           onPress={()=>{
             navigation.navigate('Prediction')
           }}
           >
-            <Text className={`text-xl font-bold ${isPrediction ? 'text-white underline': 'text-[#666768]'}`}>Predicción</Text>
+            <Text className={`text-xl font-bold ${isPrediction ? 'text-white underline': 'text-[#E0E0E1]'}`}>Predicción</Text>
           </TouchableOpacity>
         </View>
       </View>
