@@ -33,7 +33,7 @@ export default function NavBar({isHome, isAlg1, isAlg2, isSelect, isPrediction})
       )
     }
     <View className='bg-[#5c0cbc] h-24 z-10'>
-      <View className={`bg-[#5c0cbc] w-64 h-[10000px] px-6 z-10 ${isOpen ? 'translate-x-0' : 'translate-x-96'} ease-in-out duration-700`}>
+      <View className={`bg-[#5c0cbc] w-64 h-[10000px] px-6 z-10 ${isOpen ? 'translate-x-0' : 'translate-x-[10000px]'} ease-in-out duration-700`}>
         <View className='pt-24 flex space-y-4'>
           <TouchableOpacity 
           onPress={()=>{
